@@ -1,0 +1,177 @@
+/* Make sections appear on their own rows */
+.row:after
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*--- Header Bar ---*/
+div.header
+{
+  position: fixed;
+  background-color: #9932CC;
+  font-family: serif;
+  font-variant: small-caps;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  font-size: 2.0em;
+  top: 0.0em;
+  left: 0.0em;
+  width: 100%;
+  height: 2.25em;
+  overflow: hidden;
+}
+
+/* Menu button */
+.MenuButton
+{
+  position: relative;
+  top: 0.1em;
+  font-family: inherit;
+  font-size: 0.9em;
+  padding-top: 0.0em;
+  color: black;
+  background-color: white;
+  border: none;
+  border-radius: 0.5em;
+}
+.MenuButton:hover
+{
+  background-color: lightgray;
+}
+
+/*--- Navigation Bar ---*/
+div.NavigationBar
+{
+  position: fixed;
+  background-color: #dddddd;
+  top: 4.5em;
+  left: 0.0em;
+  width: 100%;
+  height: 1.5em;
+}
+
+/* Dropdown menu */
+.DropdownMenu
+{
+  position: relative;
+  display: inline-block;
+}
+#DropdownMenu a:link,
+#DropdownMenu a:visited
+{
+  color: blue;
+}
+#DropdownMenu a:hover
+{
+  color: red;
+}
+#DropdownMenu a:active
+{
+  color: yellow;
+}
+.DropdownContent
+{
+  display: none; /* Menu items hidden by default */
+  position: absolute;
+  background-color: white;
+  min-width: 250px;
+  z-index: 1;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.ShowMenu
+{
+  display: block;
+}
+
+/* External Links */
+div.NavigationBar ExternalLinks
+{
+  float: right;
+  list-style-type: none;
+  font-style: serif;
+  font-weight: bold;
+  margin-right: 0.5em;
+  margin-top: 0.2em;
+}
+
+/*--- Body ---*/
+body
+{
+  padding-left: 1.0em;
+  padding-right: 1.0em;
+  padding-top: 6em;
+  padding-bottom: 2em;
+  font-family: Baskerville;
+  font-size: 1.25em;
+  color: black;
+  background-color: #d6dcf0;
+  background-attachment: scroll;
+}
+.center
+{
+  padding: 20px 0;
+}
+p a:link,
+p a:visited
+{
+  color: blue;
+}
+p a:hover
+{
+  color: red;
+}
+p a:active
+{
+  color: yellow;
+}
+
+/*--- Footer ---*/
+div.footer
+{
+  position: fixed;
+  background-color: #dddddd;
+  font-size: 0.9em;
+  bottom: 0em;
+  height: 1.5em;
+  left: 0em;
+  width: 100%;
+  color: black;
+}
+a.Updated
+{
+  padding-top: 0.2em;
+  float: left;
+  margin-left: 0.5em;
+}
+a.FigAcknowledgements
+{
+  padding-top: 0.2em;
+  float: right;
+  margin-right: 0.5em;
+}
+
+/* Taken from:
+https://stackoverflow.com/questions/10732690/offsetting-an-html-
+anchor-to-adjust-for-fixed-header */
+a.TopAnchor
+{
+  display: block;
+  position: relative;
+  top: -10em;
+  visibility: hidden;
+}
+a.SectionAnchor
+{
+  display: block;
+  position: relative;
+  top: -6em;
+  visibility: hidden;
+}
+a.SectionAnchor:hover
+{
+  color: black;
+}

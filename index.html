@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <script>
+      /* Google Analytics
+         From: https://developers.google.com/analytics/
+           devguides/collection/analyticsjs/#the_javascript_tracking_snippet */
+      ( function(i,s,o,g,r,a,m)
+        {
+          i['GoogleAnalyticsObject']=r;
+          i[r]=i[r]||
+          function()
+          {
+            ( i[r].q=i[r].q||[] ).push(arguments)
+          },
+          i[r].l=1*new Date();
+          a=s.createElement(o), m=s.getElementsByTagName(o)[0];
+          a.async=1;
+          a.src=g;
+          m.parentNode.insertBefore(a,m)
+        }
+      )
+      ( window,document, 'script',
+        'https://www.google-analytics.com/analytics.js', 'ga' );
+
+      ga( 'create', 'UA-134686650-1', 'auto' );
+      ga( 'send', 'pageview' );
+      /* End Google Analytics */
+
+      /* Button functions taken from: 
+         https://www.w3schools.com/howto/
+         tryit.asp?filename=tryhow_css_dropdown_navbar_click */
+
+      /* When the user clicks on the button, toggle between hiding 
+         and showing the dropdown content */
+      function myFunction() 
+      {
+        document.getElementById("DropdownMenu").classList.toggle("ShowMenu"); 
+      }
+
+      /* Close the dropdown if the user clicks outside of it */
+      window.onclick = function(e) 
+      {
+        if (!e.target.matches(".MenuButton")) 
+        {
+          var DropdownMenu = document.getElementById("DropdownMenu"); 
+          if (DropdownMenu.classList.contains("ShowMenu")) 
+          {
+            DropdownMenu.classList.remove("ShowMenu"); 
+          }
+        }
+      }
+      /* End of button scripts */
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Professional webpage for Samuel
+      J. Dunham, computational astrophysicist specializing in
+      core-collapse supernovae" >
+    <meta name="keywords"
+     content="astronomy, astrophysics,
+              computational astrophysics, computational astrophysicist,
+              supernovae, core-collapse supernovae,
+              Samuel Dunham, Samuel J Dunham, Samuel J. Dunham">
+    <meta name="author" content="Samuel J. Dunham">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification"
+      content="2Dwac9idP9vLbFSeAk0kUjXs6IeXM0I0acfLPQOh_IA" />
+    <meta name="robots" content="nofollow">
+
+    <title>Samuel J. Dunham, Computational Astrophysicist</title>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <!-- Name, rank, affiliation -->
+    <div class="header">
+      Samuel J. Dunham, Astronomy PhD Student<br>Vanderbilt University
+    </div>
+
+    <div class="NavigationBar">
+
+      <div class="DropdownMenu">
+	<button class="MenuButton" onclick="myFunction()">Menu</button>
+        <div class="DropdownContent" id="DropdownMenu">
+          <a href="#CCSNResearch">CCSN Research</a><br>
+          <a href="#StrongLensingResearch">Strong Lensing Research</a><br>
+          <a href="CV.pdf" target="_blank"
+             onClick="ga('send','event','Clicked on CV link','Click','CV')">
+             CV</a>
+	</div> <!-- End of DropdownContent -->
+      </div> <!-- End of DropdownMenu -->
+
+      <ExternalLinks>
+	<li>
+	  <a href="https://github.com/dunhamsj/">
+	    <img src="Images/GitHub.png"
+	     style="width:1.2em;height=1.2em"></a>
+	  <a href="https://www.linkedin.com/in/samueljdunham/">
+	    <img src="Images/LinkedIn.png"
+	     style="width:1.2em;height=1.2em"></a>
+	</li>
+      </ExternalLinks>
+
+    </div> <!-- End of Navigationbar -->
+
+    <!-- About Me -->
+    <a class="TopAnchor" id="Top"></a>
+    <h2 align="center">About Me</h2>
+    <div class="row" hspace="10" vspace="10">
+    <img src="Images/HeadShot.JPG" alt="Head shot" hspace="20" vspace="10"
+     align="left" style="height:30%;width:30%;border-radius:50%">
+    <p align="middle" class="center">
+      Hi! My name is Sam, and welcome to my website! I am a third-year
+    graduate student at Vanderbilt University, studying
+    astronomy. This is the first webpage I've made since high-school,
+    so if you have any comments/criticims or whatever, please let me know!
+      <br><br>
+      My research-related interests span a wide range of topics,
+    but include computer simulations, hydrodynamics, and general
+    relativity. Fortuately for me I found the perfect project to work
+    on!
+      <br><br>
+      My non-research-related interests span an even wider range of
+    topics, but include cooking, being a dog dad (to Daisy and
+    Lily), enjoying the outdoors, and traveling. I am also a big
+    advocate for animal welfare, especially stopping animal cruelty.
+    </p>
+    </div>
+
+    <!-- Current Research -->
+    <a class="SectionAnchor" id="CCSNResearch"></a>
+    <h2 align="center">Core-Collapse Supernova Research</h2>
+    <div class="row">
+    <img src="Images/Supernova.jpg" hspace="20" vspace="10"
+     alt="Image of supernova" align="left" style="height:30%;width:30%">
+    <p align="middle" class="center">
+      The stability of stars is due to the force of gravity being
+    balanced by the pressure from the gas and radiation produced by
+    nuclear fusion in the stellar core. When a star runs out of
+    material to fuse this balance is lost, gravity takes over, and the
+    star begins to collapse. Stars more massive than
+    about eight suns end their lives with a tremendous
+    explosion known as a supernova. The energy output of this
+    explosion is approximately 100 times the energy that our
+    sun will produce in its entire ten-million year lifetime! What's
+    more, it is all released in a matter of seconds! These explosions
+    distribute many of the heavy elements in the solar system,
+    including carbon, the element on which life as we know it is
+    based. So it behooves us to understand this process well, because
+    it is to that which we literally owe our entire existence!
+    Although there are many promising leads, it is not currently known
+    exactly how the explosion proceeds.
+      <br><br>
+      What <i>is</i> known is that the core collapses until the
+    pressure is so high that the
+    repulsive electrical forces between the constituent atoms are
+    overcome and the core transforms from a ball of iron
+    into effectively one giant atomic nucleus--this is what will
+    eventually become a neutron star (assuming it doesn't collapse to
+    a black hole). This transition produces a shock wave that
+    propagates outward. It is intuitive that this shock wave simply
+    propagates through the entire star, blowing the material away with
+    it. However, as often happens, nature is not so simple. It was
+    discovered via computer simulations that the shock wave stalls
+    about 200 km from the center of the star. The shock is
+    <i>somehow</i> re-energized, and continues on its explosive
+    path. The goal of the research group I'm in is to determine this
+    re-energizing mechanism.
+      <br><br>
+      Currently I collaborate with Profs. Eirik Endeve and
+    Anthony Mezzacappa at Oak Ridge National Laboratory on the <b>t</b>oolkit
+    for <b>h</b>igh-<b>or</b>der <b>n</b>eutrino-r<b>ad</b>iation
+    hydr<b>o</b>dynamics, <a
+    style="font-family:'LucidaConsole',monospace">thornado</a>, a code
+    that aims to numerically simulate core-collapse supernovae in
+    three-dimensions. My work focuses on developing
+    a module that solves the hydrodynamics equations to make them
+    consistent with a 3+1 decomposition of general relativity under
+    the conformally-flat approximation. To accomplish this we are
+    using a discontinuous Galerkin method for spatial discretization
+    and strong-stability-preserving Runge-Kutta methods for temporal
+    discretization.
+      <br><br><a href="#Top">Back to top</a>
+    </p>
+    </div>
+
+    <!-- Strong Lensing Research -->
+    <a class="SectionAnchor" id="StrongLensingResearch"></a>
+    <h2 align="center">Strong Lensing Research</h2>
+    <div class="row">
+    <img src="Images/Smiley.jpg" hspace="20" vspace="10"
+     alt="Image of smiley face lens" align="right"
+     style="height:30%;width:30%">
+      <p align="middle" class="center">
+      One consequence of Einstein's theory of general relativity is
+    that as light travels through a gravitational field, it is
+    deflected. This phenomenon is known as <i>gravitational
+    lensing</i>, because the effects are similar to those of light
+    traveling through a lens. For these effects to be measurable,
+    enormous masses are required, e.g. a star, a galaxy, or something
+    even bigger! One source of measurable gravitational lensing is the
+    light from entire galaxies being deflected by the mass of a galaxy
+    cluster, the largest gravitationally-bound objects in the
+    Universe. In analogy with a physical lens, gravitational lenses
+    can also have magnifiaction effects, increasing the apparent size
+    of a galaxy, allowing astronomers to see features that would
+    otherwise be too small to see.
+      <br><br>
+      A special case of gravitational lensing is so-called <i>strong
+    lensing</i>, where the light is deflected to such a degree that
+    multiple light rays leaving the same point, but traveling in
+    different directions, can all be bent directly toward us, causing
+    us to see multiple images of the source (like the mouth and sides
+    of the smiley face in the accompanying picture).
+      <br><br>
+      As an undergraduate I did research with Professor Keren Sharon
+    in strong gravitational lensing, as part of the Sloan Giant Arcs
+    Survey (SGAS). My work involved modeling these strong lenses
+    (i.e. clusters of galaxies, two of which make up the eyes of the smiley
+    face in the picture) to determine their masses based on the color,
+    shape, and other properties of the multiple images.
+      <br><br>
+      See my undergraduate honor's thesis on one particular lens, SDSS
+    J1438+1454,
+    <a href="UndergraduateHonorsThesis.pdf" target="_blank">here</a>,
+    or the paper that came out of that research <a
+    href="https://iopscience.iop.org/article/10.3847/1538-4357/ab0d7d?pageTitle=IOPscience">here</a>.
+      <br><br><a href="#Top">Back to top</a>
+    </p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <a class="Updated">Last updated: June 2, 2019</a>
+      <a class="FigAcknowledgements">Figures taken from APOD</a>
+    </div>
+
+    </body>
+
+</html>
