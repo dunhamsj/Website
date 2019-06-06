@@ -1,5 +1,5 @@
 /* Make sections appear on their own rows */
-.row:after
+div.row
 {
   content: "";
   display: table;
@@ -15,7 +15,7 @@ div.header
   font-variant: small-caps;
   text-align: center;
   font-weight: bold;
-  color: black;
+  color: #000000;
   font-size: 2.0em;
   top: 0.0em;
   left: 0.0em;
@@ -24,37 +24,32 @@ div.header
   overflow: hidden;
 }
 
-/* Menu button */
-.MenuButton
-{
-  position: relative;
-  top: 0.1em;
-  font-family: inherit;
-  font-size: 0.9em;
-  padding-top: 0.0em;
-  color: black;
-  background-color: white;
-  border: none;
-  border-radius: 0.5em;
-}
-.MenuButton:hover
-{
-  background-color: lightgray;
-}
-
 /*--- Navigation Bar ---*/
 div.NavigationBar
 {
   position: fixed;
-  background-color: #dddddd;
+  background-color: #DDDDDD;
   top: 4.5em;
   left: 0.0em;
   width: 100%;
   height: 1.5em;
 }
 
+/* Menu button */
+div.MenuButton
+{
+  font-family: inherit;
+  font-size: 1.5em;
+  color: inherit;
+  background-color: #FFFFFF;
+}
+.MenuButton:hover
+{
+  background-color: #D3D3D3;
+}
+
 /* Dropdown menu */
-.DropdownMenu
+div.DropdownMenu
 {
   position: relative;
   display: inline-block;
@@ -62,21 +57,21 @@ div.NavigationBar
 #DropdownMenu a:link,
 #DropdownMenu a:visited
 {
-  color: blue;
+  color: #0000FF;
 }
 #DropdownMenu a:hover
 {
-  color: red;
+  color: #FF0000;
 }
 #DropdownMenu a:active
 {
-  color: yellow;
+  color: #FFFF00;
 }
 .DropdownContent
 {
   display: none; /* Menu items hidden by default */
   position: absolute;
-  background-color: white;
+  background-color: #FFFFFF;
   min-width: 250px;
   z-index: 1;
   overflow: auto;
@@ -98,6 +93,12 @@ div.NavigationBar ExternalLinks
   margin-top: 0.2em;
 }
 
+/* --- Images --- */
+img.rounded-corners
+{
+  border-radius: 30px;
+}
+
 /*--- Body ---*/
 body
 {
@@ -108,7 +109,7 @@ body
   font-family: Baskerville;
   font-size: 1.25em;
   color: black;
-  background-color: #d6dcf0;
+  background-color: #D6DCF0;
   background-attachment: scroll;
 }
 .center
@@ -118,22 +119,22 @@ body
 p a:link,
 p a:visited
 {
-  color: blue;
+  color: #0000FF;
 }
 p a:hover
 {
-  color: red;
+  color: #FF0000;
 }
 p a:active
 {
-  color: yellow;
+  color: #FFFF00;
 }
 
 /*--- Footer ---*/
 div.footer
 {
   position: fixed;
-  background-color: #dddddd;
+  background-color: #DDDDDD;
   font-size: 0.9em;
   bottom: 0em;
   height: 1.5em;
@@ -173,5 +174,5 @@ a.SectionAnchor
 }
 a.SectionAnchor:hover
 {
-  color: black;
+  color: #000000;
 }
