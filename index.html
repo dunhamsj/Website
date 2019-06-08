@@ -34,7 +34,7 @@
 
       /* When the user clicks on the button, toggle between hiding 
          and showing the dropdown content */
-      function myFunction() 
+      function ToggleMenuOnOff() 
       {
         document.getElementById("DropdownMenu").classList.toggle("ShowMenu"); 
       }
@@ -77,13 +77,12 @@
   <body>
     <!-- Name, rank, affiliation -->
     <div class="header"/>
-      Samuel J. Dunham, Astronomy PhD Student<br>Vanderbilt University
+      Samuel J. Dunham<br>Astronomy PhD Candidate
     </div>
 
     <div class="NavigationBar"/>
-
       <div class="DropdownMenu"/>
-	<button class="MenuButton" onclick="myFunction()"/>Menu</button>
+	<button class="MenuButton" onclick="ToggleMenuOnOff()"/>Menu</button>
         <div class="DropdownContent" id="DropdownMenu" />
           <a href="#CCSNResearch"/>CCSN Research</a><br>
           <a href="#StrongLensingResearch"/>Strong Lensing Research</a><br>
@@ -97,10 +96,13 @@
 	<li>
 	  <a href="https://github.com/dunhamsj/"/>
 	    <img src="Images/GitHub.png"
-	     style="width:1.2em;height=1.2em"/></a>
+	     style="width:1.0em;height=1.0em"/></a>
 	  <a href="https://www.linkedin.com/in/samueljdunham/"/>
 	    <img src="Images/LinkedIn.png"
-	     style="width:1.2em;height=1.2em"/></a>
+	     style="width:1.0em;height=1.0em"/></a>
+	  <a href="https://twitter.com/AstroDunham"/>
+	    <img src="Images/Twitter.png"
+	     style="width:1.0em;height=1.0em"/></a>
 	</li>
       </ExternalLinks>
 
@@ -238,7 +240,7 @@
 
     <!-- Footer -->
     <div class="footer"/>
-      <a class="Updated"/>Last updated: June 6, 2019</a>
+      <a class="Updated"/>Last updated: June 8, 2019</a>
       <a class="FigAcknowledgements"/>Figures taken from APOD</a>
     </div>
 
