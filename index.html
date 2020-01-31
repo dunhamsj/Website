@@ -28,26 +28,26 @@
       ga( 'send', 'pageview' );
       /* End Google Analytics */
 
-      /* Button functions taken from: 
+      /* Button functions taken from:
          https://www.w3schools.com/howto/
          tryit.asp?filename=tryhow_css_dropdown_navbar_click */
 
-      /* When the user clicks on the button, toggle between hiding 
+      /* When the user clicks on the button, toggle between hiding
          and showing the dropdown content */
-      function ToggleMenuOnOff() 
+      function ToggleMenuOnOff()
       {
-        document.getElementById("DropdownMenu").classList.toggle("ShowMenu"); 
+        document.getElementById("DropdownMenu").classList.toggle("ShowMenu");
       }
 
       /* Close the dropdown if the user clicks outside of it */
-      window.onclick = function(e) 
+      window.onclick = function(e)
       {
-        if (!e.target.matches(".MenuButton")) 
+        if (!e.target.matches(".MenuButton"))
         {
-          var DropdownMenu = document.getElementById("DropdownMenu"); 
-          if (DropdownMenu.classList.contains("ShowMenu")) 
+          var DropdownMenu = document.getElementById("DropdownMenu");
+          if (DropdownMenu.classList.contains("ShowMenu"))
           {
-            DropdownMenu.classList.remove("ShowMenu"); 
+            DropdownMenu.classList.remove("ShowMenu");
           }
         }
       }
@@ -62,6 +62,7 @@
      content="astronomy, astrophysics,
               computational astrophysics, computational astrophysicist,
               supernovae, core-collapse supernovae,
+              Sam Dunham, Sam J Dunham,
               Samuel Dunham, Samuel J Dunham, Samuel J. Dunham"/>
     <meta name="author" content="Samuel J. Dunham"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
