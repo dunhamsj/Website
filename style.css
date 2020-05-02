@@ -1,4 +1,4 @@
-/* Make sections appear on their own rows */
+/* Mak2 sections appear on their own rows */
 div.row
 {
   content: "";
@@ -10,12 +10,14 @@ div.row
 div.header
 {
   position: fixed;
+  background-image:url("Images/Veil_Hubble_6000.jpg");
+  background-size:100% 100%;
   background-color: #9932CC;
   font-family: serif;
   font-variant: small-caps;
   text-align: center;
   font-weight: bold;
-  color: #000000;
+  color: #FFFFFF;
   font-size: 2.0em;
   top: 0.0em;
   left: 0.0em;
@@ -100,6 +102,16 @@ img.rounded-corners
   border-radius: 30px;
 }
 
+.bgimage
+{
+  background-image: url("Images/bg1.jpg");
+  opacity: 0.4;
+  padding-left: -1.5em;
+  padding-right: -1.5em;
+  padding-top: -5em;
+  padding-bottom: -2em;
+}
+
 /*--- Body ---*/
 body
 {
@@ -107,10 +119,17 @@ body
   padding-right: 1.0em;
   padding-top: 6em;
   padding-bottom: 2em;
+/*
+  margin-left: 3.0em;
+  margin-right: 3.0em;
+  margin-top: 11em;
+  margin-bottom: 2em;
+*/
   font-family: Baskerville;
   font-size: 1.25em;
-  color: black;
-  background-color: #D6DCF0;
+  color: #FFFFFF;
+  background-color: #000000;
+  opacity: 1.0;
   background-attachment: scroll;
 }
 .center
