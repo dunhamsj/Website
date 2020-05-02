@@ -1,52 +1,34 @@
-/* Mak2 sections appear on their own rows */
+/* Make sections appear on their own rows */
 div.row
 {
   content: "";
   display: table;
-  clear: both;
-}
-
-/*--- Header Bar ---*/
-div.header
-{
-  position: fixed;
-  background-image:url("Images/Veil_Hubble_6000.jpg");
-  background-size:100% 100%;
-  background-color: #9932CC;
-  font-family: serif;
-  font-variant: small-caps;
-  text-align: center;
-  font-weight: bold;
-  color: #FFFFFF;
-  font-size: 2.0em;
-  top: 0.0em;
-  left: 0.0em;
-  width: 100%;
-  height: 2.25em;
-  overflow: hidden;
+  clear:   both;
 }
 
 /*--- Navigation Bar ---*/
+
 div.NavigationBar
 {
-  position: fixed;
+  position:         fixed;
   background-color: #DDDDDD;
-  top: 4.5em;
-  left: 0.0em;
-  width: 100%;
-  height: 1.2em;
+  top:              0.0em;
+  left:             0.0em;
+  width:            100%;
+  height:           1.5em;
 }
 
 /* Menu button */
 button.MenuButton
 {
-  font-family: inherit;
-  font-size: 0.7em;
-  color: inherit;
+  font-family:      inherit;
+  font-size:        0.7em;
+  color:            #000000;
   background-color: #FFFFFF;
-  position: relative;
-  left: 0.2em;
-  bottom: 0.15em;
+  position:         relative;
+  left:             0.2em;
+  top:              0.1em;
+  bottom:           0.15em;
 }
 button.MenuButton:hover
 {
@@ -57,7 +39,8 @@ button.MenuButton:hover
 div.DropdownMenu
 {
   position: relative;
-  display: inline-block;
+  display:  inline-block;
+  left:     0.2em;
 }
 #DropdownMenu a:link,
 #DropdownMenu a:visited
@@ -74,13 +57,14 @@ div.DropdownMenu
 }
 div.DropdownContent
 {
-  display: none; /* Hide dropdown menu by default */
-  position: absolute;
+  display:          none; /* Hide dropdown menu by default */
+  position:         absolute;
   background-color: #FFFFFF;
-  min-width: 250px;
-  z-index: 1;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  min-width:        250px;
+  z-index:          1;
+  overflow:         auto;
+  border-radius:    5px;
+  box-shadow:       0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 div.ShowMenu
 {
@@ -90,10 +74,10 @@ div.ShowMenu
 /* External Links */
 div.NavigationBar ExternalLinks
 {
-  float: right;
+  float:           right;
   list-style-type: none; /* Don't show the bullet point */
-  margin-right: 0.5em;
-  margin-top: 0.1em;
+  margin-right:    0.5em;
+  margin-top:      0.2em;
 }
 
 /* --- Images --- */
@@ -102,34 +86,19 @@ img.rounded-corners
   border-radius: 30px;
 }
 
-.bgimage
-{
-  background-image: url("Images/bg1.jpg");
-  opacity: 0.4;
-  padding-left: -1.5em;
-  padding-right: -1.5em;
-  padding-top: -5em;
-  padding-bottom: -2em;
-}
-
 /*--- Body ---*/
 body
 {
-  padding-left: 1.0em;
-  padding-right: 1.0em;
-  padding-top: 6em;
-  padding-bottom: 2em;
-/*
-  margin-left: 3.0em;
-  margin-right: 3.0em;
-  margin-top: 11em;
-  margin-bottom: 2em;
-*/
-  font-family: Baskerville;
-  font-size: 1.25em;
-  color: #FFFFFF;
-  background-color: #000000;
-  opacity: 1.0;
+  margin-left:           0.0em;
+  margin-right:          0.0em;
+  margin-top:            2.0em;
+  margin-bottom:         2.0em;
+  font-family:           Baskerville;
+  font-size:             1.25em;
+  color:                 #FFFFFF;
+  background-color:      #000000;
+  opacity:               1.0;
+  background-image: url("Images/bg1.jpg");
   background-attachment: scroll;
 }
 .center
@@ -153,25 +122,25 @@ p a:active
 /*--- Footer ---*/
 div.footer
 {
-  position: fixed;
+  position:         fixed;
   background-color: #DDDDDD;
-  font-size: 0.9em;
-  bottom: 0em;
-  height: 1.5em;
-  left: 0em;
-  width: 100%;
-  color: black;
+  font-size:        0.9em;
+  bottom:           0.0em;
+  height:           1.5em;
+  left:             0.0em;
+  width:            100%;
+  color:            #000000;
 }
 a.Updated
 {
   padding-top: 0.2em;
-  float: left;
+  float:       left;
   margin-left: 0.5em;
 }
 a.FigAcknowledgements
 {
-  padding-top: 0.2em;
-  float: right;
+  padding-top:  0.2em;
+  float:        right;
   margin-right: 0.5em;
 }
 
@@ -180,16 +149,16 @@ https://stackoverflow.com/questions/10732690/offsetting-an-html-
 anchor-to-adjust-for-fixed-header */
 a.TopAnchor
 {
-  display: block;
-  position: relative;
-  top: -10em;
+  display:    block;
+  position:   relative;
+  top:        -10em;
   visibility: hidden;
 }
 a.SectionAnchor
 {
-  display: block;
-  position: relative;
-  top: -6em;
+  display:    block;
+  position:   relative;
+  top:        -6em;
   visibility: hidden;
 }
 a.SectionAnchor:hover
