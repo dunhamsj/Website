@@ -86,72 +86,73 @@
 
   <body>
 
-    <div class="NavigationBar"/>
-      <div class="DropdownMenu"/>
-	<button class="MenuButton" onclick="ToggleMenuOnOff()"/>Menu</button>
-        <div class="DropdownContent" id="DropdownMenu" />
-          <a href="#CCSNResearch"/>CCSN Research</a><br>
-          <a href="#StrongLensingResearch"/>Strong Lensing Research</a><br>
+    <div class="NavigationBar">
+      <div class="DropdownMenu">
+	<button class="MenuButton" onclick="ToggleMenuOnOff()">
+          <i class="icon"></i></button>
+        <div class="DropdownContent" id="DropdownMenu">
+          <a href="#CCSNResearch">CCSN Research</a><br>
+          <a href="#StrongLensingResearch">Strong Lensing Research</a><br>
           <a href="CV_DunhamSamuel.pdf" target="_blank"
-             onClick="ga('send','event','Clicked on CV link','Click','CV')"/>
+             onClick="ga('send','event','Clicked on CV link','Click','CV')">
              CV</a>
 	</div> <!-- End of DropdownContent -->
       </div> <!-- End of DropdownMenu -->
 
       <ExternalLinks>
 	<li>
-	  <a href="https://github.com/samueljdunham/"/>
-	    <img src="Images/GitHub.png"
+	  <a href="https://github.com/samueljdunham/">
+	    <img src="Images/GitHub.png" class="rounded-corners"
 	     style="width:1.0em;height=1.0em"/></a>
-	  <a href="https://www.linkedin.com/in/samueljdunham/"/>
-	    <img src="Images/LinkedIn.png"
+	  <a href="https://www.linkedin.com/in/samueljdunham/">
+	    <img src="Images/LinkedIn.png" class="rounded-corners"
 	     style="width:1.0em;height=1.0em"/></a>
-	  <a href="https://twitter.com/AstroDunham"/>
-	    <img src="Images/Twitter.png"
+	  <a href="https://twitter.com/AstroDunham">
+	    <img src="Images/Twitter.png" class="rounded-corners"
 	     style="width:1.0em;height=1.0em"/></a>
 	</li>
       </ExternalLinks>
 
-    </div> <!-- End of Navigationbar -->
+    </div> <!-- End of NavigationBar -->
 
     <!-- About Me -->
-    <a class="TopAnchor" id="Top"/></a>
-    <h2 align="center"/>About Me</h2>
-    <div class="row" hspace="10" vspace="10"/>
+    <a class="TopAnchor" id="Top"></a>
+    <h2 align="center">About Me</h2>
+    <div class="row" hspace="10" vspace="10">
     <img src="Images/HeadShot.jpg" alt="Head shot" hspace="20" vspace="10"
      align="left" style="height:30%;width:30%;border-radius:50%"/>
-    <p align="middle" class="center"/>
+    <p align="middle" class="center">
       I am a Ph.D. candidate at Vanderbilt University, studying
     astronomy. I received my A.S. in General Studies in Math and Natural Science
     from Washtenaw Community College, my B.S. in Astronomy & Astrophysics from
     the University of Michigan, and my M.A. in physics from Fisk University
     through the Fisk-Vanderbilt Master's-to-Ph.D.
       <a href="https://www.fisk-vanderbilt-bridge.org/" target="_blank"
-      />Bridge Program</a>.
+      >Bridge Program</a>.
       <br><br>
       My research-related interests span a wide range, but include computer
     simulations, hydrodynamics, and general relativity. Fortunately for me I
     found the perfect project on which to work!
       <br><br>
       My non-research-related interests span an even wider range, but include
-    cooking, being a dog dad (to Daisy and Lily), enjoying the outdoors, and
+    cooking, being a dog dad to Daisy and Lily, enjoying the outdoors, and
     traveling. I am also a big advocate for animal welfare, especially stopping
     animal cruelty, as well as prison reform in the US.
       <br><br>
-      If you're looking for my CV, click
+      If you're looking for my CV (or my contact information), click
       <a href="CV_DunhamSamuel.pdf" target="_blank"
-      onClick="ga('send','event','Clicked on CV link','Click','CV')"/>here</a>.
+      onClick="ga('send','event','Clicked on CV link','Click','CV')">here</a>.
     </p>
-    </div> <!-- End of About Me row -->
+    </div> <!-- End of About Me -->
 
     <!-- Current Research -->
-    <a class="SectionAnchor" id="CCSNResearch"/></a>
-    <h2 align="center"/>Core-Collapse Supernova Research</h2>
-    <div class="row"/>
+    <a class="SectionAnchor" id="CCSNResearch"></a>
+    <h2 align="center">Core-Collapse Supernova Research</h2>
+    <div class="row">
     <img src="Images/Supernova.jpg" hspace="20" vspace="10"
      class="rounded-corners" alt="Image of supernova" align="left"
      style="height:30%;width:30%"/>
-    <p align="middle" class="center"/>
+    <p align="middle" class="center">
       The stability of stars is due to the force of gravity being
     balanced by the pressure from the gas and radiation produced by
     nuclear fusion in the stellar core. When a star runs out of
@@ -189,7 +190,7 @@
     Anthony Mezzacappa at Oak Ridge National Laboratory on the <b>t</b>oolkit
     for <b>h</b>igh-<b>or</b>der <b>n</b>eutrino-r<b>ad</b>iation
     hydr<b>o</b>dynamics, <a
-    style="font-family:'LucidaConsole',monospace"/>thornado</a>, a code
+    style="font-family:'LucidaConsole',monospace">thornado</a>, a code
     that aims to numerically simulate core-collapse supernovae in
     three-dimensions. My work focuses on developing
     a module that solves the hydrodynamics equations to make them
@@ -198,18 +199,18 @@
     using a discontinuous Galerkin method for spatial discretization
     and strong-stability-preserving Runge-Kutta methods for temporal
     discretization.
-      <br><br><a href="#Top"/>Back to top</a>
+      <br><br><a href="#Top">Back to top</a>
     </p>
-    </div>  <!-- End of Current Research row -->
+    </div>  <!-- End of Current Research -->
 
     <!-- Strong Lensing Research -->
-    <a class="SectionAnchor" id="StrongLensingResearch"/></a>
-    <h2 align="center"/>Strong Lensing Research</h2>
-    <div class="row"/>
+    <a class="SectionAnchor" id="StrongLensingResearch"></a>
+    <h2 align="center">Strong Lensing Research</h2>
+    <div class="row">
     <img src="Images/Smiley.jpg" hspace="20" vspace="10"
      class="rounded-corners" alt="Image of smiley face lens" align="right"
      style="height:30%;width:30%"/>
-      <p align="middle" class="center"/>
+      <p align="middle" class="center">
       One consequence of Einstein's theory of general relativity is
     that as light travels through a gravitational field, it is
     deflected. This phenomenon is known as <i>gravitational
@@ -240,18 +241,18 @@
       <br><br>
       See my undergraduate honor's thesis on one particular lens, SDSS
     J1438+1454,
-    <a href="UndergraduateHonorsThesis.pdf" target="_blank"/>here</a>,
+    <a href="UndergraduateHonorsThesis.pdf" target="_blank">here</a>,
     or the paper that came out of that research <a
-    href="https://iopscience.iop.org/article/10.3847/1538-4357/ab0d7d?pageTitle=IOPscience" target="_blank"/>here</a>.
-      <br><br><a href="#Top"/>Back to top</a>
+    href="https://iopscience.iop.org/article/10.3847/1538-4357/ab0d7d?pageTitle=IOPscience" target="_blank">here</a>.
+      <br><br><a href="#Top">Back to top</a>
     </p>
     </div>  <!-- End of Strong Lensing row -->
 
     <!-- Footer -->
-    <div class="footer"/>
-      <a class="Updated"/>Last updated: May 2, 2020</a>
-      <a class="FigAcknowledgements"/>Figures from APOD</a>
-    </div>
+    <div class="footer">
+      <a class="Updated">Last updated: May 2, 2020</a>
+      <a class="FigAcknowledgements">Social Media Icons from iconfinder.com | Figures from APOD</a>
+    </div> <!-- End of Footer -->
 
     </body>
 
