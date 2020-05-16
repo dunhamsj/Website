@@ -97,8 +97,8 @@ img.rounded-corners
 /*--- Body ---*/
 body
 {
-  margin-left           : 2.0em;
-  margin-right          : 2.0em;
+  margin-left           : 7.0em;
+  margin-right          : 7.0em;
   margin-top            : 2.0em;
   margin-bottom         : 2.0em;
   font-family           : Helvetica;
@@ -112,7 +112,7 @@ body
 }
 .center
 {
-  padding : 20px 0;
+  padding : 1.0em 0;
 }
 p a:link,
 p a:visited
