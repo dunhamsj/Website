@@ -45,10 +45,10 @@ button.MenuButton
 /* Dropdown menu */
 div.DropdownMenu
 {
-  line-height: 1.5;
-  position : relative;
-  display  : inline-block;
-  left     : 0.2em;
+  line-height : 1.5;
+  position    : relative;
+  display     : inline-block;
+  left        : 0.2em;
 }
 #DropdownMenu a:link,
 #DropdownMenu a:visited
