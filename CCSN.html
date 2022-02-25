@@ -3,31 +3,6 @@
 
   <head>
     <script>
-      /* Google Analytics
-         From: https://developers.google.com/analytics/
-           devguides/collection/analyticsjs/#the_javascript_tracking_snippet */
-      ( function(i,s,o,g,r,a,m)
-        {
-          i['GoogleAnalyticsObject']=r;
-          i[r]=i[r]||
-          function()
-          {
-            ( i[r].q=i[r].q||[] ).push(arguments)
-          },
-          i[r].l=1*new Date();
-          a=s.createElement(o), m=s.getElementsByTagName(o)[0];
-          a.async=1;
-          a.src=g;
-          m.parentNode.insertBefore(a,m)
-        }
-      )
-      ( window,document, 'script',
-        'https://www.google-analytics.com/analytics.js', 'ga' );
-
-      ga( 'create', 'UA-134686650-1', 'auto' );
-      ga( 'send', 'pageview' );
-      /* End Google Analytics */
-
       /* Button functions taken from:
          https://www.w3schools.com/howto/
          tryit.asp?filename=tryhow_css_dropdown_navbar_click */
@@ -91,7 +66,7 @@
 	<button class="MenuButton" onclick="ToggleMenuOnOff()" type="button">
         Menu</button>
         <div class="DropdownContent" id="DropdownMenu">
-          <a href="./index.html">Home</a><br>
+          <a href="./index.html">About Me</a><br>
           <a href="./CCSN.html">CCSN Research</a><br>
           <a href="./StrongLensing.html">Strong Lensing Research</a><br>
           <a href="CV_DunhamSamuel.pdf" target="_blank"
@@ -116,37 +91,63 @@
 
     </div> <!-- End of NavigationBar -->
 
-    <!-- About Me -->
-
-    <a class="TopAnchor" id="Top"></a>
-    <h2 align="center">Samuel J. Dunham</h2>
+    <!-- Current Research -->
+    <a class="SectionAnchor" id="CCSNResearch"></a>
+    <h2 align="center">Core-Collapse Supernova Research</h2>
     <div class="row">
-    <img src="Images/HeadShot.jpg" alt="Head shot" hspace="50" vspace="10"
-     align="left" style="height:30%;width:30%;border-radius:50%"/>
+    <img src="Images/Supernova.jpg" hspace="50" vspace="10"
+     class="rounded-corners" alt="Image of supernova" align="left"
+     style="height:30%;width:30%"/>
     <p align="middle">
-      I am a Ph.D. candidate at Vanderbilt University, studying
-    astronomy. I received my A.S. in General Studies in Math and Natural Science
-    from Washtenaw Community College, my B.S. in Astronomy & Astrophysics from
-    the University of Michigan, and my M.A. in physics from Fisk University
-    through the Fisk-Vanderbilt Master's-to-Ph.D.
-      <a href="https://www.fisk-vanderbilt-bridge.org/" target="_blank"
-      >Bridge Program</a>.
+      The stability of stars is due to the force of gravity being
+    balanced by the pressure from the gas and radiation produced by
+    nuclear fusion in the stellar core. When a star runs out of
+    material to fuse this balance is lost, gravity takes over, and the
+    star begins to collapse. Stars more massive than
+    about eight suns end their lives with a tremendous
+    explosion known as a supernova. The energy output of this
+    explosion is approximately 100 times the energy that our
+    sun will produce in its entire ten-million year lifetime! What's
+    more, it is all released in a matter of seconds! These explosions
+    distribute many of the heavy elements in the solar system,
+    including carbon, the element on which life as we know it is
+    based. So it behooves us to understand this process well, because
+    it is to that which we literally owe our entire existence!
+    Although there are many promising leads, it is not currently known
+    exactly how the explosion proceeds.
       <br><br>
-      My research-related interests span a wide range, but include computer
-    simulations, hydrodynamics, and general relativity. Fortunately for me I
-    found the perfect project on which to work!
+      What <i>is</i> known is that the core collapses until the
+    pressure is so high that the
+    repulsive electrical forces between the constituent atoms are
+    overcome and the core transforms from a ball of iron
+    into effectively one giant atomic nucleus--this is what will
+    eventually become a neutron star (assuming it doesn't collapse to
+    a black hole). This transition produces a shock wave that
+    propagates outward. It is intuitive that this shock wave simply
+    propagates through the entire star, blowing the material away with
+    it. However, as often happens, nature is not so simple. It was
+    discovered via computer simulations that the shock wave stalls
+    about 200 km from the center of the star. The shock is
+    <i>somehow</i> re-energized, and continues on its explosive
+    path. The goal of the research group I'm in is to determine this
+    re-energizing mechanism.
       <br><br>
-      My non-research-related interests span an even wider range, but include
-    cooking, being a dog dad to Daisy and Lily, enjoying the outdoors, and
-    traveling. I am also a big advocate for animal welfare, especially stopping
-    animal cruelty, as well as prison reform in the US.
-      <br><br>
-      If you're looking for my CV (or my contact information), click
-      <a href="CV_DunhamSamuel.pdf" target="_blank"
-      onClick="ga('send','event','Clicked on CV link','Click','CV')">here</a>.
+      Currently I collaborate with Profs. Eirik Endeve and
+    Anthony Mezzacappa at Oak Ridge National Laboratory on the <b>t</b>oolkit
+    for <b>h</b>igh-<b>or</b>der <b>n</b>eutrino-r<b>ad</b>iation
+    hydr<b>o</b>dynamics, <a
+    style="font-family:'LucidaConsole',monospace">thornado</a>, a code
+    that aims to numerically simulate core-collapse supernovae in
+    three-dimensions. My work focuses on developing
+    a module that solves the hydrodynamics equations to make them
+    consistent with a 3+1 decomposition of general relativity under
+    the conformally-flat approximation. To accomplish this we are
+    using a discontinuous Galerkin method for spatial discretization
+    and strong-stability-preserving Runge-Kutta methods for temporal
+    discretization.
       <br><br><a href="./index.html">Home</a>
     </p>
-    </div> <!-- End of About Me -->
+    </div>  <!-- End of Current Research -->
 
     <hr>
 

@@ -28,11 +28,12 @@ div.NavigationBar
   bottom              : 0.15em;
   background-size     : contain;
   height              : 2.0em;
-  width               : 3.0em;
+  width               : 6.0em;
+  text-align          : left;
   display             : block;
   border-radius       : 0.5em;
   background-image    : url("Images/Hamburger.png");
-  background-position : center;
+  background-position : right 0.5em bottom 0em;
   background-repeat   : repeat-y;
 }
 
