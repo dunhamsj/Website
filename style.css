@@ -19,27 +19,21 @@ div.NavigationBar
 }
 
 /* Menu button */
-/* https://stackoverflow.com/questions/29576527/
-adding-icon-image-to-css-class-for-html-elements */
-.icon
+/* https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button */
+.MenuButton
 {
-  background      : url("Images/Hamburger.png");
-  background-size : contain;
-  height          : 1.5em;
-  width           : 1.5em;
-  display         : block;
-}
-
-button.MenuButton
-{
-  font-family      : inherit;
-  font-size        : 0.7em;
-  color            : inherit;
-  background-color : #FFFFFF;
-  position         : relative;
-  left             : 1.0em;
-  top              : 0.4em;
-  bottom           : 0.15em;
+  position            : relative;
+  left                : 1.0em;
+  top                 : 0.4em;
+  bottom              : 0.15em;
+  background-size     : contain;
+  height              : 2.0em;
+  width               : 3.0em;
+  display             : block;
+  border-radius       : 0.5em;
+  background-image    : url("Images/Hamburger.png");
+  background-position : center;
+  background-repeat   : repeat-y;
 }
 
 /* Dropdown menu */
