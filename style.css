@@ -39,23 +39,48 @@ div.row
   font-family      : BrandonGrotesque;
 }
 
-.Header .Name
+@media screen and ( min-width : 1000px )
 {
-  position    : fixed;
-  font-size   : 1.7rem;
-  margin-top  : 0.0rem;
-  margin-left : 2.0rem;
-  text-align  : left;
-  color       : #FFFFFF;
+  .Header .Name
+  {
+    position    : fixed;
+    font-size   : 1.7rem;
+    margin-top  : 0.0rem;
+    margin-left : 2.0rem;
+    text-align  : left;
+    color       : #FFFFFF;
+  }
+
+  .Header .Links
+  {
+    position    : fixed;
+    font-size   : 1.7rem;
+    left        : 37%;
+    margin-top  : 0.0rem;
+  }
+
+}
+@media screen and ( max-width : 1000px )
+{
+  .Header .Name
+  {
+    position    : fixed;
+    margin-top  : 0.0rem;
+    margin-left : 0.0rem;
+    text-align  : left;
+    color       : #36454F;
+  }
+
+  .Header .Links
+  {
+    position    : fixed;
+    font-size   : 1.7rem;
+    left        : 0.0rem;
+    margin-top  : 0.0rem;
+  }
+
 }
 
-.Header .Links
-{
-  position    : fixed;
-  font-size   : 1.7rem;
-  left        : 37%;
-  margin-top  : 0.0rem;
-}
 
 a.navlink:link
 {
