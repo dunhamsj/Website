@@ -59,6 +59,27 @@ div.row
     margin-top  : 0.0rem;
   }
 
+  .footer .Updated
+  {
+    padding-top : 0.1rem;
+    float       : left;
+    margin-left : 2.0rem;
+  }
+  .footer .Logo
+  {
+    position    : relative;
+    left        : 25%;
+    padding-top : 0.25rem;
+    width       : 1.5rem;
+    height      : 1.5rem;
+  }
+  .footer .FigAcknowledgements
+  {
+    padding-top  : 0.0rem;
+    float        : right;
+    margin-right : 2.0rem;
+  }
+
 }
 @media screen and ( max-width : 1000px )
 {
@@ -74,11 +95,35 @@ div.row
   .Header .Links
   {
     position    : fixed;
-    font-size   : 1.7rem;
+    font-size   : 1.0rem;
     left        : 0.0rem;
-    margin-top  : 0.0rem;
+    margin-top  : 0.5rem;
   }
 
+  .footer .Updated
+  {
+    padding-top : 0.1rem;
+    float       : left;
+    margin-left : 0.0rem;
+    font-size   : 0.0rem;
+    color       : #36454F;
+  }
+  .footer .Logo
+  {
+    position    : relative;
+    left        : 1.0rem;
+    padding-top : 0.25rem;
+    width       : 1.5rem;
+    float       : left;
+    height      : 1.5rem;
+  }
+  .footer .FigAcknowledgements
+  {
+    padding-top  : 0.2rem;
+    float        : right;
+    margin-right : 2.0rem;
+    font-size    : 1.0rem;
+  }
 }
 
 
@@ -191,26 +236,6 @@ a.publink:active
   height           : 2.0rem;
   border-top       : 3px solid #FFFFFF;
   font-family      : BrandonGrotesque;
-}
-.footer .Updated
-{
-  padding-top : 0.1rem;
-  float       : left;
-  margin-left: 2.0rem;
-}
-.footer .Logo
-{
-  position    : relative;
-  left        : 25%;
-  padding-top : 0.25rem;
-  width       : 1.5rem;
-  height      : 1.5rem;
-}
-.footer .FigAcknowledgements
-{
-  padding-top  : 0.0rem;
-  float        : right;
-  margin-right : 2.0rem;
 }
 
 /* Taken from:
