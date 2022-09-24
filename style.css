@@ -29,7 +29,7 @@ div.row
 {
   position    : fixed;
   margin-top  : 0.3em;
-  margin-left : 5.0em;
+  margin-left : 2.0em;
   font-size   : 1.25em;
   text-align  : left;
   color       : #FFFFFF;
@@ -38,7 +38,7 @@ div.row
 .Header .Links
 {
   position    : fixed;
-  left        : 30%;
+  left        : 25%;
   margin-top  : 0.3em;
   font-size   : 1.25em;
 }
@@ -64,7 +64,7 @@ div.row
 {
   float           : right;
   list-style-type : none; /* Don't show the bullet point */
-  margin-right    : 5.0em;
+  margin-right    : 2.0em;
   margin-top      : 0.5em;
 }
 
@@ -135,7 +135,7 @@ p a:active
 .footer .Logo
 {
   position    : relative;
-  left        : 30%;
+  left        : 25%;
   padding-top : 0.3em;
   width       : 1.2em;
   height      : 1.2em;
