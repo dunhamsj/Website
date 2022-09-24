@@ -27,19 +27,19 @@ div.row
 {
   position         : fixed;
   background-color : #36454F;
-  top              : 0.0em;
-  left             : 0.0em;
+  top              : 0.0vw;
+  left             : 0.0vw;
   width            : 100%;
-  height           : 2.5em;
+  height           : 2.5vw;
   font-family      : BrandonGrotesque;
 }
 
 .Header .Name
 {
   position    : fixed;
-  font-size   : 1.25vw;
-  margin-top  : 0.3em;
-  margin-left : 2.0em;
+  font-size   : 1.7vw;
+  margin-top  : 0.0vw;
+  margin-left : 2.0vw;
   text-align  : left;
   color       : #FFFFFF;
 }
@@ -47,9 +47,9 @@ div.row
 .Header .Links
 {
   position    : fixed;
-  left        : 35%;
-  font-size   : 1.25vw;
-  margin-top  : 0.3em;
+  font-size   : 1.7vw;
+  left        : 37%;
+  margin-top  : 0.0vw;
 }
 
 a.navlink:link
@@ -81,8 +81,8 @@ a.navlink:active
 {
   float           : right;
   list-style-type : none; /* Don't show the bullet point */
-  margin-right    : 2.0em;
-  margin-top      : 0.5em;
+  margin-right    : 2.0vw;
+  margin-top      : 0.4vw;
 }
 
 /* --- Images --- */
@@ -99,10 +99,10 @@ body
 {
   margin-left           : 5.0%;
   margin-right          : 7.0%;
-  margin-top            : 2.0em;
-  margin-bottom         : 2.0em;
+  font-size             : 1.25vw;
+  margin-top            : 2.0vw;
+  margin-bottom         : 2.0vw;
   font-family           : Mission Script;
-  font-size             : 1.5vw;
   color                 : #36454F;
   background-color      : #FFFFFF;
   opacity               : 1.0;
@@ -152,35 +152,35 @@ a.publink:active
 .footer
 {
   position         : fixed;
-  left             : 0.0em;
-  bottom           : 0.0em;
+  font-size        : 1.25vw;
+  left             : 0.0vw;
+  bottom           : 0.0vw;
   width            : 100%;
   background-color : #36454F;
   color            : #FFFFFF;
-  font-size        : 1.0vw;
-  height           : 2.0em;
+  height           : 2.0vw;
   border-top       : 3px solid #FFFFFF;
   font-family      : BrandonGrotesque;
 }
 .footer .Updated
 {
-  padding-top : 0.3em;
+  padding-top : 0.1vw;
   float       : left;
-  margin-left : 2.0em;
+  margin-left: 2.0vw;
 }
 .footer .Logo
 {
   position    : relative;
   left        : 25%;
-  padding-top : 0.3em;
-  width       : 1.2em;
-  height      : 1.2em;
+  padding-top : 0.25vw;
+  width       : 1.5vw;
+  height      : 1.5vw;
 }
 .footer .FigAcknowledgements
 {
-  padding-top  : 0.3em;
+  padding-top  : 0.0vw;
   float        : right;
-  margin-right : 2.0em;
+  margin-right : 2.0vw;
 }
 
 /* Taken from:
