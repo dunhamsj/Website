@@ -108,7 +108,8 @@ body
   margin-right          : 7.0%;
   margin-top            : 2.0em;
   margin-bottom         : 2.0em;
-  font-family           : Helvetica;
+  /*font-family           : Mission Script;*/
+  font-family           : Brandon Grotesque;
   font-size             : 1.25em;
   color                 : #FFFFFF;
   background-color      : #000000;
@@ -132,24 +133,33 @@ p a:active
 }
 
 /*--- Footer ---*/
-div.footer
+.footer
 {
   position         : fixed;
-  background-color : #000000;
-  font-size        : 0.9em;
-  bottom           : 0.0em;
-  height           : 1.5em;
   left             : 0.0em;
+  bottom           : 0.0em;
   width            : 100%;
+  background-color : #000000;
   color            : #FFFFFF;
+  font-size        : 1.0em;
+  height           : 2.0em;
+  border-top       : 3px solid #FFFFFF;
 }
-a.Updated
+.footer .Updated
 {
   padding-top : 0.2em;
   float       : left;
-  margin-left : 0.5em;
+  margin-left : 0.2em;
 }
-a.FigAcknowledgements
+.footer .Logo
+{
+  position    : relative;
+  left        : 30%;
+  padding-top : 0.2em;
+  width       : 1.2em;
+  height      : 1.2em;
+}
+.footer .FigAcknowledgements
 {
   padding-top  : 0.2em;
   float        : right;
