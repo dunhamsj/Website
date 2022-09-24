@@ -54,6 +54,8 @@
       /* End of button scripts */
     </script>
 
+    <!-- Header -->
+
     <meta charset="UTF-8"/>
     <meta name="description" content="Professional webpage for Samuel
       J. Dunham, astronomy PhD candidate specializing in core-collapse
@@ -78,7 +80,7 @@
       content="2Dwac9idP9vLbFSeAk0kUjXs6IeXM0I0acfLPQOh_IA"/>
     <meta name="robots" content="nofollow"/>
 
-    <title>Samuel J. Dunham, Astronomy PhD Candidate</title>
+    <title>Samuel J. Dunham</title>
     <link rel="icon" href="Images/Initials.png"/>
 
     <link rel="stylesheet" href="style.css"/>
@@ -86,46 +88,48 @@
 
   <body>
 
-    <div class="NavigationBar">
-      <div class="DropdownMenu">
-	<button class="MenuButton" onclick="ToggleMenuOnOff()" type="button">
-        Menu</button>
-        <div class="DropdownContent" id="DropdownMenu">
-          <a href="./index.html">Home</a><br>
-          <a href="./CCSN.html">CCSN Research</a><br>
-          <a href="./StrongLensing.html">Strong Lensing Research</a><br>
-          <a href="CV_DunhamSamuel.pdf" target="_blank"
-             onClick="ga('send','event','Clicked on CV link','Click','CV')">
-             CV</a>
-	</div> <!-- End of DropdownContent -->
-      </div> <!-- End of DropdownMenu -->
+    <div class="Header">
 
-      <ExternalLinks>
+      <div class="Name">
+        Samuel J. Dunham
+      </div>
+
+      <div class="Links">
+        <a href="./index.html">Home</a>
+        <a href="./CCSN.html">CCSN Research</a>
+        <a href="./StrongLensing.html">Strong Lensing Research</a>
+        <a href="CV_DunhamSamuel.pdf" target="_blank"
+           onClick="ga('send','event','Clicked on CV link','Click','CV')">
+           CV</a>
+      </div>
+
+      <div class="ExternalLinks">
 	<li>
 	  <a href="https://github.com/dunhamsj/">
 	    <img src="Images/GitHub.png" class="rounded-corners"
-	     style="width:1.2em;height=1.2em"/></a>
+	     style="width:1.2em;height=1.2em"/></a>&nbsp;
 	  <a href="https://www.linkedin.com/in/samueljdunham/">
 	    <img src="Images/LinkedIn.png" class="rounded-corners"
-	     style="width:1.2em;height=1.2em"/></a>
+	     style="width:1.2em;height=1.2em"/></a>&nbsp;
 	  <a href="https://twitter.com/AstroDunham">
 	    <img src="Images/Twitter.png" class="rounded-corners"
-	     style="width:1.2em;height=1.2em"/></a>
+	     style="width:1.2em;height=1.2em"/></a>&nbsp;
 	</li>
-      </ExternalLinks>
+      </div>
 
-    </div> <!-- End of NavigationBar -->
+    </div> <!-- End of Header -->
+
+    <!-- End of Header -->
 
     <!-- About Me -->
 
     <a class="TopAnchor" id="Top"></a>
-    <h2 align="center">Samuel J. Dunham</h2>
     <div class="row">
-    <img src="Images/HeadShot.jpg" alt="Head shot" hspace="50" vspace="10"
+    <img src="Images/HeadShot.jpg" alt="Head shot" hspace="50" vspace="20"
      align="left" style="height:30%;width:30%;border-radius:50%"/>
     <p align="middle">
-      Hello and welcome! My name is Sam, and I study astronomy & astrophysics at
-    Vanderbilt University.
+      Hello and welcome! My name is Sam, and I study astronomy &
+    astrophysics at Vanderbilt University.
     Find my CV and contact info
     <a href="CV_DunhamSamuel.pdf" target="_blank"
     onClick="ga('send','event','Clicked on CV link','Click','CV')">here</a>.
@@ -133,8 +137,8 @@
     from Washtenaw Community College, my B.S. in Astronomy & Astrophysics from
     the University of Michigan, and my M.A. in physics from Fisk University
     through the Fisk-Vanderbilt Master's-to-Ph.D
-    <a href="https://www.fisk-vanderbilt-bridge.org/" target="_blank"
-    >Bridge Program</a>.
+    <a href="https://www.fisk-vanderbilt-bridge.org/" target="_blank">
+    Bridge Program</a>.
     <br><br>
     My research-related interests span a wide range, but include computer
     simulations, high-performance computing, hydrodynamics,
@@ -154,12 +158,15 @@
     <hr>
 
     <!-- Footer -->
+
     <div class="footer">
       <div class="Updated">Last updated: February 24, 2022</div>
       <img class="Logo" src="Images/Initials.png"></img>
       <div class="FigAcknowledgements">
       Social Media Icons from iconfinder.com | Figures from APOD</div>
-    </div> <!-- End of Footer -->
+    </div>
+
+    <!-- End of Footer -->
 
     </body>
 
