@@ -1,3 +1,8 @@
+html
+{
+  font-size : calc( 15px + 0.390625vw );
+}
+
 @font-face
 {
   font-family : BrandonGrotesque;
@@ -6,10 +11,10 @@
 
 hr
 {
-  border     : 0.0em;
-  margin     : 0.0em;
+  border     : 0.0rem;
+  margin     : 0.0rem;
   width      : 100%;
-  height     : 0.1em;
+  height     : 0.1rem;
   background : #36454F;
 }
 
@@ -27,19 +32,19 @@ div.row
 {
   position         : fixed;
   background-color : #36454F;
-  top              : 0.0vw;
-  left             : 0.0vw;
+  top              : 0.0rem;
+  left             : 0.0rem;
   width            : 100%;
-  height           : 2.5vw;
+  height           : 2.5rem;
   font-family      : BrandonGrotesque;
 }
 
 .Header .Name
 {
   position    : fixed;
-  font-size   : 1.7vw;
-  margin-top  : 0.0vw;
-  margin-left : 2.0vw;
+  font-size   : 1.7rem;
+  margin-top  : 0.0rem;
+  margin-left : 2.0rem;
   text-align  : left;
   color       : #FFFFFF;
 }
@@ -47,42 +52,42 @@ div.row
 .Header .Links
 {
   position    : fixed;
-  font-size   : 1.7vw;
+  font-size   : 1.7rem;
   left        : 37%;
-  margin-top  : 0.0vw;
+  margin-top  : 0.0rem;
 }
 
 a.navlink:link
 {
   color           : #FFFFFF;
   text-decoration : none;
-  padding         : 0.5em;
+  padding         : 0.5rem;
 }
 a.navlink:visited
 {
   color           : #FFFFFF;
   text-decoration : none;
-  padding         : 0.5em;
+  padding         : 0.5rem;
 }
 a.navlink:hover
 {
   color           : #FFA500;
   text-decoration : none;
-  padding         : 0.5em;
+  padding         : 0.5rem;
 }
 a.navlink:active
 {
   color           : #FF0000;
   text-decoration : none;
-  padding         : 0.5em;
+  padding         : 0.5rem;
 }
 
 .Header .ExternalLinks
 {
   float           : right;
   list-style-type : none; /* Don't show the bullet point */
-  margin-right    : 2.0vw;
-  margin-top      : 0.4vw;
+  margin-right    : 2.0rem;
+  margin-top      : 0.4rem;
 }
 
 /* --- Images --- */
@@ -99,9 +104,9 @@ body
 {
   margin-left           : 5.0%;
   margin-right          : 7.0%;
-  font-size             : 1.25vw;
-  margin-top            : 2.0vw;
-  margin-bottom         : 2.0vw;
+  font-size             : 1.25rem;
+  margin-top            : 2.0rem;
+  margin-bottom         : 2.0rem;
   font-family           : Mission Script;
   color                 : #36454F;
   background-color      : #FFFFFF;
@@ -152,35 +157,35 @@ a.publink:active
 .footer
 {
   position         : fixed;
-  font-size        : 1.25vw;
-  left             : 0.0vw;
-  bottom           : 0.0vw;
+  font-size        : 1.25rem;
+  left             : 0.0rem;
+  bottom           : 0.0rem;
   width            : 100%;
   background-color : #36454F;
   color            : #FFFFFF;
-  height           : 2.0vw;
+  height           : 2.0rem;
   border-top       : 3px solid #FFFFFF;
   font-family      : BrandonGrotesque;
 }
 .footer .Updated
 {
-  padding-top : 0.1vw;
+  padding-top : 0.1rem;
   float       : left;
-  margin-left: 2.0vw;
+  margin-left: 2.0rem;
 }
 .footer .Logo
 {
   position    : relative;
   left        : 25%;
-  padding-top : 0.25vw;
-  width       : 1.5vw;
-  height      : 1.5vw;
+  padding-top : 0.25rem;
+  width       : 1.5rem;
+  height      : 1.5rem;
 }
 .footer .FigAcknowledgements
 {
-  padding-top  : 0.0vw;
+  padding-top  : 0.0rem;
   float        : right;
-  margin-right : 2.0vw;
+  margin-right : 2.0rem;
 }
 
 /* Taken from:
@@ -190,14 +195,14 @@ a.TopAnchor
 {
   display    : block;
   position   : relative;
-  top        : -10em;
+  top        : -10rem;
   visibility : hidden;
 }
 a.SectionAnchor
 {
   display    : block;
   position   : relative;
-  top        : -1em;
+  top        : -1rem;
   visibility : hidden;
 }
 a.SectionAnchor:hover
