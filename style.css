@@ -4,6 +4,15 @@
   src: url( BrandonGrotesque.otf );
 }
 
+hr
+{
+  border     : 0.0em;
+  margin     : 0.0em;
+  width      : 100%;
+  height     : 0.1em;
+  background : #36454F;
+}
+
 /* Make sections appear on their own rows */
 div.row
 {
@@ -12,7 +21,7 @@ div.row
   clear   : both;
 }
 
-/*--- Header ---*/
+/* --- Header --- */
 
 .Header
 {
@@ -38,26 +47,34 @@ div.row
 .Header .Links
 {
   position    : fixed;
-  left        : 25%;
+  left        : 35%;
   margin-top  : 0.3em;
   font-size   : 1.25em;
 }
 
-.Header .Links a:link, a:visited
+a.navlink:link
 {
   color           : #FFFFFF;
   text-decoration : none;
   padding         : 0.5em;
 }
-.Header .Links a:hover
+a.navlink:visited
+{
+  color           : #FFFFFF;
+  text-decoration : none;
+  padding         : 0.5em;
+}
+a.navlink:hover
 {
   color           : #FFA500;
   text-decoration : none;
+  padding         : 0.5em;
 }
-.Header .Links a:active
+a.navlink:active
 {
-  color           : #FFFF00;
+  color           : #FF0000;
   text-decoration : none;
+  padding         : 0.5em;
 }
 
 .Header .ExternalLinks
@@ -69,20 +86,15 @@ div.row
 }
 
 /* --- Images --- */
+
 img.rounded-corners
 {
   border-radius : 30px;
   border        : 2px solid #FFFFFF;
 }
 
-hr
-{
-  width  : 70%;
-  margin : 2% auto;
-  border : 2px solid white;
-}
+/* --- Body --- */
 
-/*--- Body ---*/
 body
 {
   margin-left           : 5.0%;
@@ -112,7 +124,31 @@ p a:active
   color : #FFFF00;
 }
 
-/*--- Footer ---*/
+/* --- Publications --- */
+
+a.publink:link
+{
+  color           : #36454F;
+  text-decoration : none;
+}
+a.publink:visited
+{
+  color           : #36454F;
+  text-decoration : none;
+}
+a.publink:hover
+{
+  color           : #FFA500;
+  text-decoration : none;
+}
+a.publink:active
+{
+  color           : #FF0000;
+  text-decoration : none;
+}
+
+/* --- Footer --- */
+
 .footer
 {
   position         : fixed;
