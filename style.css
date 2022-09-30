@@ -6,7 +6,7 @@ html
 @font-face
 {
   font-family : BrandonGrotesque;
-  src: url( BrandonGrotesque.otf );
+  src         : url( BrandonGrotesque.otf );
 }
 
 hr
