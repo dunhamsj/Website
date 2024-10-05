@@ -14,18 +14,6 @@
         document.getElementById("DropdownMenu").classList.toggle("ShowMenu");
       }
 
-      /* Close the dropdown if the user clicks outside of it */
-      window.onclick = function(e)
-      {
-        if (!e.target.matches(".MenuButton"))
-        {
-          var DropdownMenu = document.getElementById("DropdownMenu");
-          if (DropdownMenu.classList.contains("ShowMenu"))
-          {
-            DropdownMenu.classList.remove("ShowMenu");
-          }
-        }
-      }
       /* End of button scripts */
     </script>
 
@@ -73,9 +61,7 @@
         <a href="./index.html"         class="navlink">About Me</a>
         <a href="./research.html"      class="navlink">Research</a>
         <a href="./presentations.html" class="navlink">Presentations</a>
-        <a href="CV_DunhamSamuel.pdf"  class="navlink" target="_blank"
-           onClick="ga('send','event','Clicked on CV link','Click','CV')">
-           CV</a>
+        <a href="CV_DunhamSamuel.pdf"  class="navlink" target="_blank">CV</a>
       </div>
 
       <div class="ExternalLinks">
@@ -88,9 +74,6 @@
 	     style="width:1.2em;height=1.2em"/></a>&nbsp;
 	  <a href="https://twitter.com/AstroDunham">
 	    <img src="Images/Twitter.png" class="rounded-corners"
-	     style="width:1.2em;height=1.2em"/></a>&nbsp;
-	  <a href="https://astrodon.social/@AstroDunham" rel="me">
-	    <img src="Images/Mastodon.png" class="rounded-corners"
 	     style="width:1.2em;height=1.2em"/></a>&nbsp;
 	</li>
       </div>
@@ -107,22 +90,22 @@
     <img src="Images/HeadShot.jpeg" alt="Head shot" hspace="50" vspace="10"
          align="left" style="height:30%;width:30%;border-radius:50%"/>
     <p align="middle">
-      Hello and welcome! My name is Sam, and I am an astronomy and astrophysics
-      post-doc scholar working with professor Elias Most at Caltech
-      on resistive GRMHD.
-      Find my CV and contact info
+      Hello and welcome! My name is Sam, and I am an astrophysics
+      postdoctoral scholar working with professor Elias Most at Caltech
+      on the theoretical development of 14-moment, resistive GRMHD.
+      Find my CV with contact info
       <a href="CV_DunhamSamuel.pdf" target="_blank"
       onClick="ga('send','event','Clicked on CV link','Click','CV')">here</a>.
       <br><br>
       My research-related interests span a wide range, but include
       dissipative hydrodynamics, resistive magnetohydrodynamics,
-      general relativity, and high-performance computing.
+      general relativity, numerical methods, and high-performance computing.
       <br><br>
       My non-research-related interests span an even wider range, but include
       cooking, being a dog dad to Daisy, Bo, and Penny, enjoying the outdoors,
       playing guitar, and traveling.
       I advocate for animal welfare, especially stopping
-      animal cruelty, and also for massive prison reform in the US.
+      animal cruelty, and also for prison reform in the US.
     </p>
     </div>
 
@@ -131,7 +114,7 @@
     <!-- Footer -->
 
     <div class="footer">
-      <div class="Updated">Last updated: October 2, 2024</div>
+      <div class="Updated">Last updated: October 5, 2024</div>
       <img class="Logo" src="Images/Initials.png"></img>
       <div class="FigAcknowledgements">
       Icons from iconfinder.com | Figures from APOD</div>

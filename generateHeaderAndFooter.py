@@ -14,18 +14,6 @@ header = \
         document.getElementById("DropdownMenu").classList.toggle("ShowMenu");
       }
 
-      /* Close the dropdown if the user clicks outside of it */
-      window.onclick = function(e)
-      {
-        if (!e.target.matches(".MenuButton"))
-        {
-          var DropdownMenu = document.getElementById("DropdownMenu");
-          if (DropdownMenu.classList.contains("ShowMenu"))
-          {
-            DropdownMenu.classList.remove("ShowMenu");
-          }
-        }
-      }
       /* End of button scripts */
     </script>
 
@@ -73,9 +61,7 @@ header = \
         <a href="./index.html"         class="navlink">About Me</a>
         <a href="./research.html"      class="navlink">Research</a>
         <a href="./presentations.html" class="navlink">Presentations</a>
-        <a href="CV_DunhamSamuel.pdf"  class="navlink" target="_blank"
-           onClick="ga('send','event','Clicked on CV link','Click','CV')">
-           CV</a>
+        <a href="CV_DunhamSamuel.pdf"  class="navlink" target="_blank">CV</a>
       </div>
 
       <div class="ExternalLinks">
@@ -89,9 +75,6 @@ header = \
 	  <a href="https://twitter.com/AstroDunham">
 	    <img src="Images/Twitter.png" class="rounded-corners"
 	     style="width:1.2em;height=1.2em"/></a>&nbsp;
-	  <a href="https://astrodon.social/@AstroDunham" rel="me">
-	    <img src="Images/Mastodon.png" class="rounded-corners"
-	     style="width:1.2em;height=1.2em"/></a>&nbsp;
 	</li>
       </div>
 
@@ -104,7 +87,7 @@ footer = \
 """    <!-- Footer -->
 
     <div class="footer">
-      <div class="Updated">Last updated: October 2, 2024</div>
+      <div class="Updated">Last updated: October 5, 2024</div>
       <img class="Logo" src="Images/Initials.png"></img>
       <div class="FigAcknowledgements">
       Icons from iconfinder.com | Figures from APOD</div>
@@ -157,4 +140,4 @@ for fileName in fileNames:
         dd = d.replace( s, footer )
     
     with open( fileName, 'w' ) as f:
-        f.write( d )
+        f.write( dd )
