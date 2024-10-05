@@ -39,7 +39,7 @@ div.row
   font-family      : BrandonGrotesque;
 }
 
-@media screen and ( min-width : 1000px ) /* Desktop */
+@media screen and ( min-width : 1200px ) /* Desktop */
 {
   .Header .Name
   {
@@ -82,7 +82,7 @@ div.row
 
 }
 
-@media screen and ( max-width : 1000px ) /* Mobile phones */
+@media screen and ( max-width : 1200px ) /* Mobile phones */
 {
   .Header .Name
   {
