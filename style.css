@@ -84,6 +84,7 @@ div.row
 
 @media screen and ( max-width : 1200px ) /* Mobile phones */
 {
+  /* Hack to hide name on mobile phone screens */
   .Header .Name
   {
     position    : fixed;
