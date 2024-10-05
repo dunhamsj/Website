@@ -70,9 +70,10 @@ header = \
       </div>
 
       <div class="Links">
-        <a href="./index.html"        class="navlink">About Me</a>
-        <a href="./research.html"     class="navlink">Research</a>
-        <a href="CV_DunhamSamuel.pdf" class="navlink" target="_blank"
+        <a href="./index.html"         class="navlink">About Me</a>
+        <a href="./research.html"      class="navlink">Research</a>
+        <a href="./presentations.html" class="navlink">Presentations</a>
+        <a href="CV_DunhamSamuel.pdf"  class="navlink" target="_blank"
            onClick="ga('send','event','Clicked on CV link','Click','CV')">
            CV</a>
       </div>
@@ -112,7 +113,7 @@ footer = \
     <!-- End of Footer -->
 """
 
-fileNames = [ 'index.html', 'research.html' ]
+fileNames = [ 'index.html', 'research.html', 'presentations.html' ]
 
 for fileName in fileNames:
 
