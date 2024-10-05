@@ -31,8 +31,7 @@ header = \
 
     <meta charset="UTF-8"/>
     <meta name="description" content="Professional webpage for Samuel
-      J. Dunham, astronomy PhD candidate specializing in core-collapse
-      supernovae"/>
+      J. Dunham, astronomy PhD working on 14-moment resistive GRMHD"/>
     <meta name="keywords"
      content="astronomy, astrophysics, astro,
               computational astrophysics, computational astrophysicist,
@@ -154,7 +153,7 @@ for fileName in fileNames:
             n += 1
     
     if ( s in data ) :
-        d = data.replace( s, footer )
+        dd = d.replace( s, footer )
     
     with open( fileName, 'w' ) as f:
         f.write( d )
