@@ -18,12 +18,34 @@ hr
   background : #36454F;
 }
 
-/* Make sections appear on their own rows */
-div.row
+/* Taken from:
+https://stackoverflow.com/questions/10732690/offsetting-an-html-
+anchor-to-adjust-for-fixed-header */
+a.TopAnchor
 {
-  content : "";
-  display : table;
-  clear   : both;
+  display    : block;
+  position   : relative;
+  top        : -10rem;
+  visibility : hidden;
+}
+a.SectionAnchor
+{
+  display    : block;
+  position   : relative;
+  top        : -1rem;
+  visibility : hidden;
+}
+a.SectionAnchor:hover
+{
+  color : #36464F;
+}
+
+/* --- Images --- */
+
+img.rounded-corners
+{
+  border-radius : 30px;
+  border        : 2px solid #FFFFFF;
 }
 
 /* --- Header --- */
@@ -37,6 +59,117 @@ div.row
   width            : 100%;
   height           : 2.5rem;
   font-family      : BrandonGrotesque;
+}
+
+.Header .ExternalLinks
+{
+  float           : right;
+  list-style-type : none; /* Don't show the bullet point */
+  margin-right    : 2.0rem;
+  margin-top      : 0.4rem;
+}
+
+a.navlink:link
+{
+  color           : #FFFFFF;
+  text-decoration : none;
+  padding         : 0.5rem;
+}
+a.navlink:visited
+{
+  color           : #FFFFFF;
+  text-decoration : none;
+  padding         : 0.5rem;
+}
+a.navlink:hover
+{
+  color           : #FFA500;
+  text-decoration : none;
+  padding         : 0.5rem;
+}
+a.navlink:active
+{
+  color           : #FF0000;
+  text-decoration : none;
+  padding         : 0.5rem;
+}
+
+/* --- Footer --- */
+
+.footer
+{
+  position         : fixed;
+  font-size        : 1.25rem;
+  left             : 0.0rem;
+  bottom           : 0.0rem;
+  width            : 100%;
+  background-color : #36454F;
+  color            : #FFFFFF;
+  height           : 2.0rem;
+  font-family      : BrandonGrotesque;
+}
+
+/* --- Body --- */
+
+body
+{
+  margin-left           : 5.0%;
+  margin-right          : 7.0%;
+  font-size             : 1.25rem;
+  margin-top            : 2.0rem;
+  margin-bottom         : 2.0rem;
+  font-family           : Mission Script;
+  color                 : #36454F;
+  background-color      : #FFFFFF;
+  opacity               : 1.0;
+}
+p a:link
+{
+  color : #0000FF;
+}
+p a:visited
+{
+  color : #0000FF;
+}
+p a:hover
+{
+  color : #FF0000;
+}
+p a:active
+{
+  color : #FFFF00;
+}
+
+/* Make research sections appear on their own rows */
+
+div.ResRow
+{
+  content : "";
+  display : table;
+  clear   : both;
+}
+
+/* --- Resarch.Publications --- */
+
+a.publink:link
+{
+  color           : #36454F;
+  text-decoration : none;
+}
+a.publink:visited
+{
+  color           : #36454F;
+  text-decoration : none;
+}
+a.publink:hover
+{
+  color           : #FFA500;
+  text-decoration : none;
+}
+a.publink:active
+{
+  color           : #FF0000;
+  text-decoration : none;
 }
 
 @media screen and ( min-width : 1200px ) /* Desktop */
@@ -80,6 +213,21 @@ div.row
     margin-right : 2.0rem;
   }
 
+}
+
+/* --- Columns for presentation page --- */
+
+.prescolumn
+{
+  float : left;
+}
+.left
+{
+  width : 50%;
+}
+.right
+{
+  width : 50%;
 }
 
 @media screen and ( max-width : 1200px ) /* Mobile phones */
@@ -126,137 +274,4 @@ div.row
     margin-right : 2.0rem;
     font-size    : 1.0rem;
   }
-}
-
-
-a.navlink:link
-{
-  color           : #FFFFFF;
-  text-decoration : none;
-  padding         : 0.5rem;
-}
-a.navlink:visited
-{
-  color           : #FFFFFF;
-  text-decoration : none;
-  padding         : 0.5rem;
-}
-a.navlink:hover
-{
-  color           : #FFA500;
-  text-decoration : none;
-  padding         : 0.5rem;
-}
-a.navlink:active
-{
-  color           : #FF0000;
-  text-decoration : none;
-  padding         : 0.5rem;
-}
-
-.Header .ExternalLinks
-{
-  float           : right;
-  list-style-type : none; /* Don't show the bullet point */
-  margin-right    : 2.0rem;
-  margin-top      : 0.4rem;
-}
-
-/* --- Images --- */
-
-img.rounded-corners
-{
-  border-radius : 30px;
-  border        : 2px solid #FFFFFF;
-}
-
-/* --- Body --- */
-
-body
-{
-  margin-left           : 5.0%;
-  margin-right          : 7.0%;
-  font-size             : 1.25rem;
-  margin-top            : 2.0rem;
-  margin-bottom         : 2.0rem;
-  font-family           : Mission Script;
-  color                 : #36454F;
-  background-color      : #FFFFFF;
-  opacity               : 1.0;
-}
-p a:link
-{
-  color : #0000FF;
-}
-p a:visited
-{
-  color : #0000FF;
-}
-p a:hover
-{
-  color : #FF0000;
-}
-p a:active
-{
-  color : #FFFF00;
-}
-
-/* --- Publications --- */
-
-a.publink:link
-{
-  color           : #36454F;
-  text-decoration : none;
-}
-a.publink:visited
-{
-  color           : #36454F;
-  text-decoration : none;
-}
-a.publink:hover
-{
-  color           : #FFA500;
-  text-decoration : none;
-}
-a.publink:active
-{
-  color           : #FF0000;
-  text-decoration : none;
-}
-
-/* --- Footer --- */
-
-.footer
-{
-  position         : fixed;
-  font-size        : 1.25rem;
-  left             : 0.0rem;
-  bottom           : 0.0rem;
-  width            : 100%;
-  background-color : #36454F;
-  color            : #FFFFFF;
-  height           : 2.0rem;
-  font-family      : BrandonGrotesque;
-}
-
-/* Taken from:
-https://stackoverflow.com/questions/10732690/offsetting-an-html-
-anchor-to-adjust-for-fixed-header */
-a.TopAnchor
-{
-  display    : block;
-  position   : relative;
-  top        : -10rem;
-  visibility : hidden;
-}
-a.SectionAnchor
-{
-  display    : block;
-  position   : relative;
-  top        : -1rem;
-  visibility : hidden;
-}
-a.SectionAnchor:hover
-{
-  color : #36464F;
 }
