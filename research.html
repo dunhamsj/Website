@@ -17,6 +17,10 @@
       /* End of button scripts */
     </script>
 
+    <script id="MathJax-script"
+      async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
     <meta charset="UTF-8"/>
     <meta name="description" content="Professional webpage for Samuel
       J. Dunham, astronomy PhD working on 14-moment resistive GRMHD"/>
@@ -85,7 +89,8 @@
     <!-- GRRMHD Research -->
 
     <br>
-    <h2 align="center">Dissipative General Relativistic Resistive Magnetohydrodynamics</h2>
+    <h2 align="center">Dissipative General Relativistic
+      Resistive Magnetohydrodynamics</h2>
     <div class="ResRow">
     <img src="images/bugli_rec.png" hspace="50" vspace="10"
          class="rounded-corners"
@@ -93,36 +98,29 @@
          align="left"
          style="height:30%;width:30%"/>
     <p align="middle">
-      My current work focuses on the theoretical development of general
+      My current work (no pun intended, but I'll take it anyway)
+      focuses on the theoretical development of general
       relativistic resistive magnetohydrodynamics inspired by 14-moment methods.
-      The "usual" magnetohydrodynamics equations are comprised of time-evolution
-      equations for baryon number, energy, momentum, and the magnetic field,
-      with the stresses from the fluid and EM field defined as "constitutive"
-      relations in the form of "stress equals mass density times velocity
-      plus scalar pressure";
-      i.e., the stresses are not governed by time-evolution equations.
-      This is an approximation.
-      Often, a <i>very</i> good approximation.
-      However, this approximation leads to equations that impose a restriction:
-      the magnetic field is "frozen" to the fluid.
-      This is mostly fine, except in regions where the magnetic field abruptly
-      changes direction, creating so-called "current sheets".
-      In these regions, the magnetic field diffuses out of the fluid
-      and rearranges itself in such a way as to lower the total energy of the
-      system.
-      This process of "magnetic reconnection" leads to a release of
-      electromagnetic energy.
-      This release of energy can accelerate particles and can be the driving
-      force of some observable electromagnetic transients from, e.g., binary
-      neutron star mergers.
-      My work focuses on modeling the evolution of the fluid using techniques
-      inspired by the "14-moment" method, which leads to evolution equations
-      for the stresses, thereby modeling reconnection appropriately.
       <br><br>
-      <b>Gorgeous figure taken from</b><br>
+      The "usual" relativistic hydrodynamics equations are defined by
+      requiring the baryon number current density, \(N,\)
+      and the fluid energy-momentum density, \(T,\)
+      be conserved; i.e.,
+      \( \nabla \, \cdot N = 0 \) and \( \nabla \cdot T = 0 \).
+      Since \(N\) is a four-vector and \(T\) is a (2,0) symmetric tensor
+      in four dimensions (and therefore has ten independent components),
+      these two objects comprise 14 degrees of freedom.
+      However, the conservation equations are only five in number&mdash;we
+      have nine degrees of freedom unaccounted for; i.e., nine degrees of
+      freedom without corresponding evolution equations.
+      These nine degrees of freedom correspond to dissipative processes.
+      The 14-moment method provides a means to derive evolution equations
+      for these dissipative degrees of freedom.
+      <br><br>
+      <b>Gorgeous figure showing magnetic reconnection taken from</b><br>
       <a href="https://arxiv.org/abs/2410.20924"
          class="publink" target="_blank">
-         Bugli et al., arXiv (2024)
+         Bugli et al., arXiv 2410.20924 (2024)
       </a><br>
     </p>
     </div>
@@ -165,7 +163,7 @@
       pressure is so high that the repulsive electrical forces between
       the electrons and the nuclei are overcome and the electrons and protons
       combine to form neutrons (and neutrinos), thus effectively creating
-      a single nucleus the size of a city&#8212this is what
+      a single nucleus the size of a city&mdash;this is what
       will eventually become a neutron star (assuming it doesn't collapse to
       a black hole).
       This transition produces a shock wave that propagates outward.
@@ -188,7 +186,7 @@
       target="_blank"
       <span style="font-family:'Courier New',monospace">thornado</span></a>,
       a computer code that aims to simulate core-collapse supernovae in
-      three dimensions using Runge&#8211Kutta discontinuous Galerkin methods.
+      three dimensions using Runge&ndash;Kutta discontinuous Galerkin methods.
       My work focused on developing a module that solves the general
       relativistic hydrodynamics equations under the 3+1 decomposition of
       spacetime and the conformally-flat condition.
